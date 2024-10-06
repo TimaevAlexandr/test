@@ -59,10 +59,9 @@ also do this trick with
 install helm chart
 
 ```bash
-helm install app1 app1 -n api
-helm install app2 app2 -n api
+helm install app1 app1 -n api --values common-settings.yml
+helm install app2 app2 -n api --values common-settings.yml
 ```
-
 
 happy helming ^_^
 

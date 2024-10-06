@@ -82,16 +82,18 @@ autoscaling:
 
 # Additional volumes on the output Deployment definition.
 volumes:
-  - name: app1-storage
-    configMap:
-      name: app1-config
+- name: app1-html-volume
+  configMap:
+    name: app1-html
+    items:
+      - key: index.html
+        path: index.html
 
 
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts:
-  - name: app1-storage
-    mountPath: /etc/app1-config
-    subPath: app1.conf
+  - name: app1-html-volume
+    mountPath: /usr/share/nginx/html
 
 nodeSelector: {}
 

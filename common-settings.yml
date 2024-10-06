@@ -2,3 +2,4 @@ replicaCount: 2
 namesapce: api
 ingress:
   enabled: true
+  className: nginx

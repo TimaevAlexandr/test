@@ -87,10 +87,10 @@ volumes:
 
 
 # Additional volumeMounts on the output Deployment definition.
-volumeMounts: []
-# - name: foo
-#   mountPath: "/etc/foo"
-#   readOnly: true
+volumeMounts:
+  - name: app1-config
+    mountPath: /etc/app1-config
+    subPath: app1.conf
 
 nodeSelector: {}
 

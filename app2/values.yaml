@@ -86,10 +86,10 @@ volumes:
       name: app2-config
 
 # Additional volumeMounts on the output Deployment definition.
-volumeMounts: []
-# - name: foo
-#   mountPath: "/etc/foo"
-#   readOnly: true
+volumeMounts:
+  - name: app2-config
+    mountPath: /etc/app2-config
+    subPath: app2.conf
 
 nodeSelector: {}
 

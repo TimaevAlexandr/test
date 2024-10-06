@@ -88,7 +88,7 @@ volumes:
 
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts:
-  - name: app1-config
+  - name: app1-storage
     mountPath: /etc/app1-config
     subPath: app1.conf
 

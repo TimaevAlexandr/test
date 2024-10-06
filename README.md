@@ -24,6 +24,8 @@ Kubernetes cluster on a node running Ubuntu (24).
 
 Helm package manager: https://helm.sh/
 
+Configured ingress nginx controller
+
 ## Execution steps
 
 create namespace
